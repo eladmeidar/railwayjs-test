@@ -1,0 +1,9 @@
+<div class="page-header"><h1>Edit suggestion</h1></div>
+
+<% form_for(suggestion, {action: path_to.suggestion(suggestion), method: 'PUT', id: "suggestion_form", class: 'form-horizontal'}, function (form) { %>
+    <%- partial('suggestions/form.ejs', {locals: {form: form, suggestion: suggestion}}) %>
+    <div class="form-actions">
+        <%- form.submit('<i class="icon-ok icon-white"></i> Update suggestion', {class: 'btn btn-primary'}) %> or
+        <%- link_to('Cancel', path_to.suggestion(suggestion), {class: 'btn'}) %>
+    </div>
+<% });%>

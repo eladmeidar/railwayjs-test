@@ -1,0 +1,31 @@
+<%- errorMessagesFor(suggestion) %>
+<div class="control-group">
+   <%- form.label("content", false, {class: "control-label"}) %>
+   <div class="controls">
+       <%- form.textarea("content") %>
+   </div>
+</div>
+<div class="control-group">
+   <%- form.label("status", false, {class: "control-label"}) %>
+   <div class="controls">
+       <%- form.input("status") %>
+   </div>
+</div>
+<div class="control-group">
+   <%- form.label("category_id", false, {class: "control-label"}) %>
+   <div class="controls">
+       <%- form.input("category_id") %>
+   </div>
+</div>
+<div class="control-group">
+   <%- form.label("user_id", false, {class: "control-label"}) %>
+   <div class="controls"> 
+       <%- form.input("user_id") %>
+   </div>
+</div>
+<div class="control-group">
+   <%- form.label("viewd", false, {class: "control-label"}) %>
+   <div class="controls">
+       <%- form.checkbox("viewd") %>
+   </div>
+</div>
